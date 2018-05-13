@@ -1,0 +1,37 @@
+{
+  "routes":
+  [
+    {
+      "src": "sources_class",
+      "dst": "destination_class",
+      "filters": [ { "name": "fcu_state_telem" } ]
+    },
+  ],
+
+  "endpoints":
+  {
+    "file_read_example":
+    {
+      "class":"sources_class",
+      "type":"replay",
+      "path":"raw:downsampled.log:r"
+    },
+
+    "web_server":
+    {
+      "class":"destination_class",
+      "type":"web",
+      "port":"8644",                  /**< Port to serve the web server on localhost */
+      "external":true,                /**< If true, the web server will be accessible to others on the network */
+      "views_root":"/srv/views/",     /**< ZBR will load view files from here, if set. */
+    },
+
+    "exec_example":
+    {
+      "class":"destination_class",
+      "type":"exec",
+      "path": "messenger.js",
+    },
+  },
+}
+

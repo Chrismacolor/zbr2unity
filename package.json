@@ -1,0 +1,16 @@
+{
+  "name": "zbr2unity",
+  "version": "1.0.0",
+  "description": "Stream stdin to websockets",
+  "main": "formatjs.js",
+  "scripts": {
+    "test": "node messenger.js"
+  },
+  "author": "Chris Di Santo",
+  "license": "ISC",
+  "dependencies": {
+    "i": "^0.3.6",
+    "socket.io": "^2.1.0",
+    "websocket-stream": "^5.1.2"
+  }
+}
