@@ -4,13 +4,13 @@
   "description": "Stream stdin to websockets",
   "main": "formatjs.js",
   "scripts": {
-    "test": "node messenger.js"
+    "start": "node messenger.js"
   },
   "author": "Chris Di Santo",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.3",
     "i": "^0.3.6",
-    "socket.io": "^2.1.0",
-    "websocket-stream": "^5.1.2"
+    "socket.io": "^2.1.0"
   }
 }
