@@ -15,10 +15,10 @@ const rl = readline.createInterface({
   output: process.stdout
 });
 
-app.use("/TemplateData",express.static(__dirname + "webgltest3/TemplateData"));
-app.use("/Build",express.static(__dirname + "webgltest3/Build"));
+app.use("/TemplateData",express.static(__dirname + "/webgltest6/TemplateData"));
+app.use("/Build",express.static(__dirname + "/webgltest6/Build"));
 app.get('/', function (req, res) {
-    res.sendFile(__dirname + 'webgltest3/index.html');
+    res.sendFile(__dirname + '/webgltest6index.html');
 });
 
 
